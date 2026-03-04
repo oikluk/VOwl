@@ -2,7 +2,15 @@ import urllib.request
 import base64
 import re
 import socket
+import ssl
+import time
+import random
 from concurrent.futures import ThreadPoolExecutor
+
+# --- НАСТРОЙКИ (МЕНЯЙ ТУТ) ---
+TOTAL_MAX_CONFS = 1500  # Максимальное количество в nonobr.txt
+LIMIT_PER_RUN = 60      # Сколько рабочих конфигов отобрать в gotov.txt
+# ----------------------------
 
 SOURCES = [
     "https://raw.githubusercontent.com/tankist939-afk/Obhod-WL/refs/heads/main/Obhod%20WL",
@@ -12,39 +20,49 @@ SOURCES = [
     "https://raw.githubusercontent.com/EtoNeYaProject/etoneyaproject.github.io/refs/heads/main/whitelist"
 ]
 
-LIMIT = 60
-
 def get_content(url):
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=15) as response:
-            raw_bytes = response.read()
-            data = raw_bytes.decode('utf-8', errors='ignore')
-            if re.match(r'^[A-Za-z0-9+/=\s]+$', data) and '://' not in data[:100]:
-                try:
-                    return base64.b64decode(data).decode('utf-8', errors='ignore')
-                except:
-                    return data
+            data = response.read().decode('utf-8', errors='ignore')
+            if re.match(r'^[A-Za-z0-9+/=\s]+$', data) and '://' not in data[:50]:
+                try: return base64.b64decode(data).decode('utf-8', errors='ignore')
+                except: return data
             return data
-    except Exception as e:
-        print(f"! Ошибка загрузки {url}: {e}")
-        return ""
+    except: return ""
 
-def check_port(config):
+def hard_check_vless(config):
+    """Жёсткая проверка: TCP + TLS Handshake + Проверка на SNI + Пинг"""
     try:
-        if not config.startswith('vless://') or '@' not in config:
+        # 1. Удаляем мусор по названию
+        if any(x in config.lower() for x in ["n/a", "н/д", "offline"]):
             return None
-            
+        
+        # 2. Считаем мусором конфиги без SNI
+        if "sni=" not in config.lower():
+            return None
+
         link_part = config.split('#')[0].strip()
         server_info = link_part.split('@')[1].split('/')[0].split('?')[0].split('#')[0]
+        host, port = server_info.rsplit(':', 1) if ':' in server_info else (server_info, 443)
+        port = int(port)
+
+        start_time = time.time()
+        # L4 Check
+        sock = socket.create_connection((host, port), timeout=3.0)
         
-        if ':' in server_info:
-            host, port = server_info.rsplit(':', 1)
-        else:
-            host, port = server_info, 443
-            
-        with socket.create_connection((host, int(port)), timeout=3.0):
-            return config
+        # L7 Check (Попытка TLS Handshake)
+        # Извлекаем SNI из ссылки для корректного рукопожатия
+        sni_match = re.search(r'sni=([^&?#]+)', config, re.IGNORECASE)
+        server_hostname = sni_match.group(1) if sni_match else host
+
+        context = ssl._create_unverified_context()
+        with context.wrap_socket(sock, server_hostname=server_hostname) as ssock:
+            pass
+        
+        ping = int((time.time() - start_time) * 1000)
+        sock.close()
+        return (config, ping)
     except:
         return None
 
@@ -53,68 +71,65 @@ def extract_flag(config):
         name_part = config.split('#')[1] if '#' in config else ""
         flags = re.findall(r'[\U0001F1E6-\U0001F1FF]{2}', name_part)
         return flags[0] if flags else "🌐"
-    except:
-        return "🌐"
+    except: return "🌐"
 
 def main():
     raw_list = []
-    print("--- Этап 1: Сбор только VLESS конфигов ---")
+    print(f"--- Сбор VLESS (Лимит базы: {TOTAL_MAX_CONFS}) ---")
     for url in SOURCES:
         content = get_content(url)
         for line in content.splitlines():
             line = line.strip()
-            # ФИЛЬТР: Берем только VLESS
-            if line.startswith('vless://'):
+            # Берем только VLESS, где есть SNI и нет меток нерабочести
+            if line.startswith('vless://') and "sni=" in line.lower() and not any(x in line.lower() for x in ["n/a", "н/д"]):
                 raw_list.append(line)
 
-    if not raw_list:
-        print("VLESS конфиги не найдены.")
-        # Создаем пустые файлы, чтобы гитхаб не ругался
-        for f_name in ["nonobr.txt", "nonname.txt", "gotov.txt"]:
-            with open(f_name, "w") as f: f.write("")
-        return
-
-    # nonobr.txt
-    nonobr_final = sorted(list(set(raw_list)))
+    # 1. nonobr.txt (Уникальные VLESS со SNI, ограничено TOTAL_MAX_CONFS)
+    nonobr_final = sorted(list(set(raw_list)))[:TOTAL_MAX_CONFS]
     with open("nonobr.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(nonobr_final))
 
-    # Уникальность по адресу
+    # Уникальность по адресу для проверки
     unique_map = {}
     for cfg in nonobr_final:
         try:
-            address = cfg.split('#')[0].strip()
-            if address not in unique_map:
-                unique_map[address] = cfg
-        except:
-            continue
+            addr = cfg.split('#')[0].strip()
+            if addr not in unique_map: unique_map[addr] = cfg
+        except: continue
     
     unique_list = list(unique_map.values())
-    print(f"Проверка {len(unique_list)} VLESS серверов...")
+    random.shuffle(unique_list)
 
-    working_configs = []
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        for result in executor.map(check_port, unique_list):
+    print(f"Поиск {LIMIT_PER_RUN} лучших рабочих узлов...")
+
+    working_results = []
+    with ThreadPoolExecutor(max_workers=25) as executor:
+        for result in executor.map(hard_check_vless, unique_list):
             if result:
-                working_configs.append(result)
-                if len(working_configs) >= LIMIT:
+                working_results.append(result)
+                if len(working_results) >= LIMIT_PER_RUN:
                     break
 
-    # nonname.txt
-    with open("nonname.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(working_configs))
+    # Сортировка по пингу
+    working_results.sort(key=lambda x: x[1])
+    final_configs = [x[0] for x in working_results]
 
-    # gotov.txt
+    # 2. nonname.txt
+    with open("nonname.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(final_configs))
+
+    # 3. gotov.txt
     with open("gotov.txt", "w", encoding="utf-8") as f:
         f.write("#profile-update-interval: 12\n")
         f.write("#profile-title: 🌐 VOwl\n")
         f.write("#announce: Не используй на сервисах из Белого Списка\n\n")
-        for i, config in enumerate(working_configs, 1):
+        
+        for i, config in enumerate(final_configs, 1):
             flag = extract_flag(config)
             clean_link = config.split('#')[0].strip()
             f.write(f"{clean_link}#{flag} №{i} VOwl\n")
             
-    print(f"Готово. Найдено рабочих VLESS: {len(working_configs)}")
+    print(f"Успех. База: {len(nonobr_final)}, Отобрано рабочих: {len(final_configs)}")
 
 if __name__ == "__main__":
     main()
