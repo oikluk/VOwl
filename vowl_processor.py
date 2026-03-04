@@ -7,7 +7,7 @@ import time
 import random
 from concurrent.futures import ThreadPoolExecutor
 
-# --- НАСТРОЙКИ (МЕНЯЙ ТУТ) ---
+# --- НАСТРОЕЧКИ 🔪 ---
 TOTAL_MAX_CONFS = 1500  # Максимальное количество в nonobr.txt
 LIMIT_PER_RUN = 60      # Сколько рабочих конфигов отобрать в gotov.txt
 # ----------------------------
