@@ -5,21 +5,21 @@ import socket
 import ssl
 import time
 import random
+import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# --- НАСТРОЕЧКИ 🔪 ---
-TOTAL_MAX_CONFS = 1500  # Максимум в nonobr.txt
-LIMIT_PER_RUN = 60      # Сколько отобрать в gotov.txt
-CHECK_URL = "https://www.gstatic.com/generate_204"
+# --- НАСТРОЙКИ ---
+TOTAL_MAX_CONFS = 1500  
+LIMIT_PER_RUN = 60      
 # ----------------------------
 
-SOURCES = [
-    "https://raw.githubusercontent.com/tankist939-afk/Obhod-WL/refs/heads/main/Obhod%20WL",
-    "https://raw.githubusercontent.com/vsevjik/OBWL/refs/heads/main/wwh",
-    "https://wlrus.lol/confs/selected.txt",
-    "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt",
-    "https://raw.githubusercontent.com/EtoNeYaProject/etoneyaproject.github.io/refs/heads/main/whitelist"
-]
+SOURCES = {
+    "Obhod-WL": "https://raw.githubusercontent.com/tankist939-afk/Obhod-WL/refs/heads/main/Obhod%20WL",
+    "OBWL": "https://raw.githubusercontent.com/vsevjik/OBWL/refs/heads/main/wwh",
+    "wlrus": "https://wlrus.lol/confs/selected.txt",
+    "zieng2": "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt",
+    "EtoNeYa": "https://raw.githubusercontent.com/EtoNeYaProject/etoneyaproject.github.io/refs/heads/main/whitelist"
+}
 
 def get_content(url):
     try:
@@ -32,48 +32,41 @@ def get_content(url):
             return data
     except: return ""
 
-def proxy_get_check(config):
+def proxy_get_check(config_data):
     """
-    Максимальная имитация via Proxy GET:
-    TCP -> TLS Handshake -> HTTP GET Request -> Ожидание заголовков ответа
+    Proxy GET: TCP -> TLS -> HTTP GET
+    config_data: кортеж (link, source_name)
     """
+    config, source_name = config_data
+    sock = None
     try:
-        if "sni=" not in config.lower(): return None
-        
         link_part = config.split('#')[0].strip()
         server_info = link_part.split('@')[1].split('/')[0].split('?')[0].split('#')[0]
         host, port = server_info.rsplit(':', 1) if ':' in server_info else (server_info, 443)
         port = int(port)
 
+        sni_match = re.search(r'sni=([^&?#]+)', config, re.IGNORECASE)
+        sni = sni_match.group(1) if sni_match else host
+
         start_time = time.time()
+        sock = socket.create_connection((host, port), timeout=3.0)
         
-        # 1. Установка TCP соединения
-        sock = socket.create_connection((host, port), timeout=3.5)
-        
-        # 2. Попытка TLS Handshake
-        sni = re.search(r'sni=([^&?#]+)', config, re.IGNORECASE).group(1)
         context = ssl._create_unverified_context()
-        
         with context.wrap_socket(sock, server_hostname=sni) as ssock:
-            # 3. Реальная отправка HTTP GET внутри туннеля
-            # Имитируем запрос к Google для проверки проходимости данных
-            http_request = (
-                f"GET /generate_204 HTTP/1.1\r\n"
-                f"Host: {sni}\r\n"
-                f"User-Agent: Mozilla/5.0\r\n"
-                f"Connection: close\r\n\r\n"
-            )
+            # Чистый Proxy GET
+            http_request = f"GET /generate_204 HTTP/1.1\r\nHost: {sni}\r\nConnection: close\r\n\r\n"
             ssock.sendall(http_request.encode())
-            
-            # 4. Ожидаем ответ (хотя бы начало заголовка HTTP/1.1 204)
-            response = ssock.recv(512)
+            ssock.settimeout(2.0)
+            response = ssock.recv(256)
             if not response or b"HTTP" not in response:
                 return None
         
         latency = int((time.time() - start_time) * 1000)
-        return (config, latency)
+        return {"config": config, "ping": latency, "source": source_name}
     except:
         return None
+    finally:
+        if sock: sock.close()
 
 def extract_flag(config):
     try:
@@ -83,60 +76,78 @@ def extract_flag(config):
     except: return "🌐"
 
 def main():
-    raw_list = []
-    print("--- Сбор и фильтрация ---")
-    for url in SOURCES:
+    # Лимиты для GitHub Actions
+    try:
+        import resource
+        resource.setrlimit(resource.RLIMIT_NOFILE, (4096, 4096))
+    except: pass
+
+    all_candidates = []
+    source_stats = {name: 0 for name in SOURCES.keys()}
+
+    print("--- Сбор данных по источникам ---")
+    for name, url in SOURCES.items():
         content = get_content(url)
+        count = 0
         for line in content.splitlines():
             line = line.strip()
             if line.startswith('vless://') and "sni=" in line.lower():
-                raw_list.append(line)
+                all_candidates.append((line, name))
+                count += 1
+        print(f"[{name}]: найдено {count} потенциальных VLESS")
 
-    # nonobr.txt - берем всё уникальное до лимита
-    unique_all = sorted(list(set(raw_list)))
-    nonobr_final = unique_all[:TOTAL_MAX_CONFS]
+    # Убираем дубликаты, сохраняя привязку к источнику
+    unique_candidates = {}
+    for cfg, name in all_candidates:
+        addr = cfg.split('#')[0].strip()
+        if addr not in unique_candidates:
+            unique_candidates[addr] = (cfg, name)
+    
+    candidates_list = list(unique_candidates.values())
+    random.shuffle(candidates_list)
+    
+    # Ограничиваем базу для nonobr
     with open("nonobr.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(nonobr_final))
+        f.write("\n".join([c[0] for c in candidates_list[:TOTAL_MAX_CONFS]]))
 
-    # Для проверки перемешиваем весь список
-    random.shuffle(unique_all)
-
-    print(f"Запуск глубокой Proxy GET проверки (из {len(unique_all)} кандидатов)...")
+    print(f"\nЗапуск Proxy GET чекера (цель: {LIMIT_PER_RUN} шт)...")
 
     working_results = []
-    # Используем as_completed для мгновенной обработки по мере поступления
-    with ThreadPoolExecutor(max_workers=40) as executor:
-        future_to_config = {executor.submit(proxy_get_check, cfg): cfg for cfg in unique_all}
+    with ThreadPoolExecutor(max_workers=50) as executor:
+        futures = {executor.submit(proxy_get_check, item): item for item in candidates_list}
         
-        for future in as_completed(future_to_config):
-            result = future.result()
-            if result:
-                working_results.append(result)
-                if len(working_results) % 10 == 0:
-                    print(f"Найдено живых: {len(working_results)}")
+        for future in as_completed(futures):
+            res = future.result()
+            if res:
+                working_results.append(res)
+                source_stats[res['source']] += 1
+                if len(working_results) % 5 == 0:
+                    print(f"Найдено живых: {len(working_results)}/{LIMIT_PER_RUN}")
                 
-                # Жёсткий стоп, когда набрали лимит для gotov.txt
                 if len(working_results) >= LIMIT_PER_RUN:
+                    executor.shutdown(wait=False, cancel_futures=True)
                     break
 
-    # Сортируем по латентности (лучшие сверху)
-    working_results.sort(key=lambda x: x[1])
-    final_configs = [x[0] for x in working_results]
+    # Сортировка по пингу
+    working_results.sort(key=lambda x: x['ping'])
+    
+    print("\n--- ИТОГОВАЯ СТАТИСТИКА (в gotov.txt попали) ---")
+    for name, count in source_stats.items():
+        if count > 0:
+            print(f"  > {name}: {count} шт.")
 
-    # Сохраняем файлы
+    # Сохранение файлов
     with open("nonname.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(final_configs))
+        f.write("\n".join([r['config'] for r in working_results]))
 
     with open("gotov.txt", "w", encoding="utf-8") as f:
-        f.write("#profile-update-interval: 12\n")
-        f.write("#profile-title: 🌐 VOwl\n")
-        f.write("#announce: Не используй на сервисах из Белого Списка\n\n")
-        for i, config in enumerate(final_configs, 1):
+        f.write("#profile-update-interval: 12\n#profile-title: 🌐 VOwl\n#announce: Не используй на сервисах из Белого Списка\n\n")
+        for i, res in enumerate(working_results, 1):
+            config = res['config']
             flag = extract_flag(config)
-            clean_link = config.split('#')[0].strip()
-            f.write(f"{clean_link}#{flag} №{i} VOwl\n")
+            f.write(f"{config.split('#')[0].strip()}#{flag} №{i} VOwl\n")
             
-    print(f"Готово! В gotov.txt отобрано {len(final_configs)} элитных конфигов.")
+    print(f"\nВсе файлы обновлены успешно. Всего в подписке: {len(working_results)}")
 
 if __name__ == "__main__":
     main()
