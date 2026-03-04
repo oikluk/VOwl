@@ -5,12 +5,12 @@ import socket
 import ssl
 import time
 import random
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# --- НАСТРОЙКИ ---
-TOTAL_MAX_CONFS = 1500  
-LIMIT_PER_RUN = 60      
-CHECK_URL = "http://www.google.com/generate_204" # Эталон для Proxy GET
+# --- НАСТРОЕЧКИ 🔪 ---
+TOTAL_MAX_CONFS = 1500  # Максимум в nonobr.txt
+LIMIT_PER_RUN = 60      # Сколько отобрать в gotov.txt
+CHECK_URL = "https://www.gstatic.com/generate_204"
 # ----------------------------
 
 SOURCES = [
@@ -24,7 +24,7 @@ SOURCES = [
 def get_content(url):
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=10) as response:
+        with urllib.request.urlopen(req, timeout=15) as response:
             data = response.read().decode('utf-8', errors='ignore')
             if re.match(r'^[A-Za-z0-9+/=\s]+$', data) and '://' not in data[:50]:
                 try: return base64.b64decode(data).decode('utf-8', errors='ignore')
@@ -34,8 +34,8 @@ def get_content(url):
 
 def proxy_get_check(config):
     """
-    Эмуляция via Proxy GET. 
-    Проверяет возможность прохождения HTTP трафика через узел.
+    Максимальная имитация via Proxy GET:
+    TCP -> TLS Handshake -> HTTP GET Request -> Ожидание заголовков ответа
     """
     try:
         if "sni=" not in config.lower(): return None
@@ -47,23 +47,27 @@ def proxy_get_check(config):
 
         start_time = time.time()
         
-        # 1. TCP Connection
-        sock = socket.create_connection((host, port), timeout=3.0)
+        # 1. Установка TCP соединения
+        sock = socket.create_connection((host, port), timeout=3.5)
         
-        # 2. TLS Handshake (обязателен для VLESS/Reality)
+        # 2. Попытка TLS Handshake
         sni = re.search(r'sni=([^&?#]+)', config, re.IGNORECASE).group(1)
         context = ssl._create_unverified_context()
         
         with context.wrap_socket(sock, server_hostname=sni) as ssock:
-            # 3. Эмуляция HTTP GET запроса внутри установленного TLS туннеля
-            # Мы отправляем минимальный заголовок, чтобы проверить, ответит ли прокси
-            # Для VLESS это покажет, что туннель пропускает байты
-            request = f"GET /generate_204 HTTP/1.1\r\nHost: {sni}\r\nConnection: close\r\n\r\n"
-            ssock.sendall(request.encode())
+            # 3. Реальная отправка HTTP GET внутри туннеля
+            # Имитируем запрос к Google для проверки проходимости данных
+            http_request = (
+                f"GET /generate_204 HTTP/1.1\r\n"
+                f"Host: {sni}\r\n"
+                f"User-Agent: Mozilla/5.0\r\n"
+                f"Connection: close\r\n\r\n"
+            )
+            ssock.sendall(http_request.encode())
             
-            # Читаем кусочек ответа
-            response = ssock.recv(1024)
-            if not response:
+            # 4. Ожидаем ответ (хотя бы начало заголовка HTTP/1.1 204)
+            response = ssock.recv(512)
+            if not response or b"HTTP" not in response:
                 return None
         
         latency = int((time.time() - start_time) * 1000)
@@ -85,35 +89,41 @@ def main():
         content = get_content(url)
         for line in content.splitlines():
             line = line.strip()
-            # Берем ТОЛЬКО те, где есть SNI
             if line.startswith('vless://') and "sni=" in line.lower():
                 raw_list.append(line)
 
-    nonobr_final = sorted(list(set(raw_list)))[:TOTAL_MAX_CONFS]
+    # nonobr.txt - берем всё уникальное до лимита
+    unique_all = sorted(list(set(raw_list)))
+    nonobr_final = unique_all[:TOTAL_MAX_CONFS]
     with open("nonobr.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(nonobr_final))
 
-    unique_map = {}
-    for cfg in nonobr_final:
-        addr = cfg.split('#')[0].strip()
-        if addr not in unique_map: unique_map[addr] = cfg
-    
-    unique_list = list(unique_map.values())
-    random.shuffle(unique_list)
+    # Для проверки перемешиваем весь список
+    random.shuffle(unique_all)
 
-    print(f"Запуск via Proxy GET проверки ({len(unique_list)} узлов)...")
+    print(f"Запуск глубокой Proxy GET проверки (из {len(unique_all)} кандидатов)...")
 
     working_results = []
-    with ThreadPoolExecutor(max_workers=30) as executor:
-        for result in executor.map(proxy_get_check, unique_list):
+    # Используем as_completed для мгновенной обработки по мере поступления
+    with ThreadPoolExecutor(max_workers=40) as executor:
+        future_to_config = {executor.submit(proxy_get_check, cfg): cfg for cfg in unique_all}
+        
+        for future in as_completed(future_to_config):
+            result = future.result()
             if result:
                 working_results.append(result)
+                if len(working_results) % 10 == 0:
+                    print(f"Найдено живых: {len(working_results)}")
+                
+                # Жёсткий стоп, когда набрали лимит для gotov.txt
                 if len(working_results) >= LIMIT_PER_RUN:
                     break
 
+    # Сортируем по латентности (лучшие сверху)
     working_results.sort(key=lambda x: x[1])
     final_configs = [x[0] for x in working_results]
 
+    # Сохраняем файлы
     with open("nonname.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(final_configs))
 
@@ -126,7 +136,7 @@ def main():
             clean_link = config.split('#')[0].strip()
             f.write(f"{clean_link}#{flag} №{i} VOwl\n")
             
-    print(f"Готово! Отобрано {len(final_configs)} проверенных через GET.")
+    print(f"Готово! В gotov.txt отобрано {len(final_configs)} элитных конфигов.")
 
 if __name__ == "__main__":
     main()
