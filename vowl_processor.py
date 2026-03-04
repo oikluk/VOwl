@@ -12,12 +12,13 @@ SOURCES = [
     "https://raw.githubusercontent.com/EtoNeYaProject/etoneyaproject.github.io/refs/heads/main/whitelist"
 ]
 
+LIMIT = 60 # Максимальное количество конфигов
+
 def get_content(url):
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=15) as response:
             data = response.read().decode('utf-8', errors='ignore')
-            # Проверка на Base64
             if re.match(r'^[A-Za-z0-9+/=\s]+$', data) and '://' not in data[:50]:
                 return base64.b64decode(data).decode('utf-8', errors='ignore')
             return data
@@ -27,12 +28,9 @@ def get_content(url):
 
 def check_port(config):
     try:
-        # Убираем всё лишнее, оставляем только протокол://...
         link_part = config.split('#')[0].strip()
-        # Извлекаем хост и порт
         server_info = link_part.split('@')[1].split('/')[0].split('?')[0]
         host, port = server_info.split(':') if ':' in server_info else (server_info, 443)
-        
         with socket.create_connection((host, int(port)), timeout=2.0):
             return config
     except:
@@ -46,21 +44,20 @@ def extract_flag(config):
 def main():
     raw_list = []
     
-    print("--- Шаг 1: Сбор и очистка от мусора ---")
+    print("--- Сбор данных ---")
     for url in SOURCES:
         content = get_content(url)
         for line in content.splitlines():
             line = line.strip()
-            # Пропускаем пустые строки и наши сервисные заголовки, если они попали в базу
             if '://' in line and not line.startswith('#'):
                 raw_list.append(line)
 
-    # 1. Файл nonobr.txt (Просто уникальные строки из всех источников)
+    # 1. nonobr.txt (Все уникальные, без лимита)
     nonobr_final = sorted(list(set(raw_list)))
     with open("nonobr.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(nonobr_final))
 
-    # --- Шаг 2: Удаление дубликатов по серверному адресу ---
+    # Удаление дублей по адресу сервера
     unique_map = {}
     for cfg in nonobr_final:
         address = cfg.split('#')[0].strip()
@@ -69,32 +66,12 @@ def main():
     
     unique_list = list(unique_map.values())
 
-    print(f"Найдено {len(unique_list)} уникальных серверов. Проверка...")
+    print(f"Проверка {len(unique_list)} серверов...")
 
-    # --- Шаг 3: Проверка доступности (30 потоков) ---
+    # 2. Проверка и ограничение до LIMIT
+    working_configs = []
     with ThreadPoolExecutor(max_workers=30) as executor:
-        working_configs = [r for r in executor.map(check_port, unique_list) if r]
-
-    # 2. Файл nonname.txt (Только живые, без переименования)
-    with open("nonname.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(working_configs))
-
-    # --- Шаг 4: Финальная сборка gotov.txt ---
-    print(f"Сборка готового файла ({len(working_configs)} рабочих)...")
-    
-    with open("gotov.txt", "w", encoding="utf-8") as f:
-        # Сначала пишем техническую часть
-        f.write("#profile-update-interval: 12\n")
-        f.write("#profile-title: 🌐 VOwl\n")
-        f.write("#announce: Не используй на сервисах из Белого Списка\n\n")
-        
-        # Затем пишем обработанные конфиги
-        for i, config in enumerate(working_configs, 1):
-            flag = extract_flag(config)
-            clean_link = config.split('#')[0].strip()
-            f.write(f"{clean_link}#{flag} №{i} VOwl\n")
-
-    print("Все файлы обновлены!")
-
-if __name__ == "__main__":
-    main()
+        for result in executor.map(check_port, unique_list):
+            if result:
+                working_configs.append(result)
+                if len(working_configs) >= LIMIT: # Останавливаемся, если на
