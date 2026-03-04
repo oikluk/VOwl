@@ -18,11 +18,8 @@ def get_content(url):
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=15) as response:
-            # Читаем байты и декодируем с игнорированием ошибок
             raw_bytes = response.read()
             data = raw_bytes.decode('utf-8', errors='ignore')
-            
-            # Проверка на Base64 (если нет явных признаков протоколов)
             if re.match(r'^[A-Za-z0-9+/=\s]+$', data) and '://' not in data[:100]:
                 try:
                     return base64.b64decode(data).decode('utf-8', errors='ignore')
@@ -30,16 +27,15 @@ def get_content(url):
                     return data
             return data
     except Exception as e:
-        print(f"! Ошибка загрузки источника {url}: {e}")
+        print(f"! Ошибка загрузки {url}: {e}")
         return ""
 
 def check_port(config):
     try:
-        if not config or '@' not in config:
+        if not config.startswith('vless://') or '@' not in config:
             return None
             
         link_part = config.split('#')[0].strip()
-        # Вырезаем часть между @ и началом параметров (?, /, #)
         server_info = link_part.split('@')[1].split('/')[0].split('?')[0].split('#')[0]
         
         if ':' in server_info:
@@ -55,7 +51,6 @@ def check_port(config):
 def extract_flag(config):
     try:
         name_part = config.split('#')[1] if '#' in config else ""
-        # Поиск эмодзи флагов
         flags = re.findall(r'[\U0001F1E6-\U0001F1FF]{2}', name_part)
         return flags[0] if flags else "🌐"
     except:
@@ -63,24 +58,28 @@ def extract_flag(config):
 
 def main():
     raw_list = []
-    print("--- Этап 1: Сбор данных ---")
+    print("--- Этап 1: Сбор только VLESS конфигов ---")
     for url in SOURCES:
         content = get_content(url)
         for line in content.splitlines():
             line = line.strip()
-            if '://' in line and not line.startswith('#'):
+            # ФИЛЬТР: Берем только VLESS
+            if line.startswith('vless://'):
                 raw_list.append(line)
 
     if not raw_list:
-        print("Критическая ошибка: не найдено ни одного конфига!")
-        return # Выход без ошибки (код 0)
+        print("VLESS конфиги не найдены.")
+        # Создаем пустые файлы, чтобы гитхаб не ругался
+        for f_name in ["nonobr.txt", "nonname.txt", "gotov.txt"]:
+            with open(f_name, "w") as f: f.write("")
+        return
 
     # nonobr.txt
     nonobr_final = sorted(list(set(raw_list)))
     with open("nonobr.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(nonobr_final))
 
-    # Убираем дубли по адресу сервера
+    # Уникальность по адресу
     unique_map = {}
     for cfg in nonobr_final:
         try:
@@ -91,7 +90,7 @@ def main():
             continue
     
     unique_list = list(unique_map.values())
-    print(f"Проверка {len(unique_list)} серверов...")
+    print(f"Проверка {len(unique_list)} VLESS серверов...")
 
     working_configs = []
     with ThreadPoolExecutor(max_workers=20) as executor:
@@ -115,11 +114,7 @@ def main():
             clean_link = config.split('#')[0].strip()
             f.write(f"{clean_link}#{flag} №{i} VOwl\n")
             
-    print(f"Успешно обработано. Найдено рабочих: {len(working_configs)}")
+    print(f"Готово. Найдено рабочих VLESS: {len(working_configs)}")
 
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        print(f"Глобальная ошибка скрипта: {e}")
-        # Не вызываем sys.exit(1), чтобы GitHub считал выполнение успешным
+    main()
