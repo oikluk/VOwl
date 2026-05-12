@@ -2,14 +2,9 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://450c27a8-d160-40af-96af-0cb11570d68b@79.174.92.31:3449?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dev.tau.vk.ru&pbk=y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8&sid=822d4a48d7c4cbf4#🌐 №1 VOwl
-vless://d1bba76e-fa65-4772-a3ce-ea3ede58f343@79.174.91.100:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=7b374423e3f0f5fb&spx=%2F#🌐 №2 VOwl
-vless://e8a67795-ca80-498f-bab0-34989a8f4a1d@79.174.91.100:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=e035146d93da51a9#🌐 №3 VOwl
-vless://a277a703-e767-4ed4-a963-89fe26d91162@79.174.91.100:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=e035146d93da51a9#🌐 №4 VOwl
-vless://e8a67795-ca80-498f-bab0-34989a8f4a1d@79.174.91.100:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=e035146d93da51a9&spx=%2F#🌐 №5 VOwl
-vless://3b6ed23e-7ddc-4a86-9637-c07001805670@79.174.91.100:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=e035146d93da51a9#🌐 №6 VOwl
-vless://51c546ab-c825-44d9-ac21-bfc5e7c55f53@79.174.91.100:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=e035146d93da51a9&spx=%2F#🌐 №7 VOwl
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №8 VOwl
-vless://e8a67795-ca80-498f-bab0-34989a8f4a1d@79.174.91.100:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=7b374423e3f0f5fb#🌐 №9 VOwl
-vless://fd47bf21-bd91-Fade-b53f-6ce484de16b6@37.9.4.82:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=ads.x5.ru&pbk=o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA#🌐 №10 VOwl
-vless://fd47bf21-bd91-Fade-b53f-6ce484de16b6@37.9.4.82:443?encryption=none&type=grpc&security=reality&mode=gun&fp=qq&sni=ads.x5.ru&pbk=o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA#🌐 №11 VOwl
+vless://ffe4cc5b-350d-4e7f-9c0d-554bcc0b7bbd@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=st.vk.com&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=e728431eb0&spx=%2F#🌐 №1 VOwl
+vless://b1a3d641-dd5f-4229-a457-700880c1c4bd@79.174.92.31:3449?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dev.tau.vk.ru&pbk=y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8&sid=822d4a48d7c4cbf4&spx=/#🌐 №2 VOwl
+vless://ffe4cc5b-350d-4e7f-9c0d-554bcc0b7bbd@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=music.yandex.ru&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=a2ece9f4a5&spx=%2F#🌐 №3 VOwl
+vless://ea03f2e1-b15e-4ba6-bae6-ef9a74a76d71@79.174.92.31:3449?type=tcp&security=reality&flow=xtls-rprx-vision&fp=random&pbk=y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8&sid=822d4a48d7c4cbf4&sni=dev.tau.vk.ru&spx=/#🌐 №4 VOwl
+vless://ffe4cc5b-350d-4e7f-9c0d-554bcc0b7bbd@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=max.ru&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=abf5ca17f045fa&spx=%2F#🌐 №5 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №6 VOwl
