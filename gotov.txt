@@ -2,9 +2,4 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://dff6cd4f-b894-438f-8412-f1db3229260a@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=max.ru&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=fcaee38c10e6&spx=%2F#🌐 №1 VOwl
-vless://dff6cd4f-b894-438f-8412-f1db3229260a@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=music.yandex.ru&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=9246b2ae&spx=%2F#🌐 №2 VOwl
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №3 VOwl
-vless://47f69d23-6323-40e1-b825-e168709f8fc6@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=max.ru&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=a2ece9f4a5&spx=%2F#🌐 №4 VOwl
-vless://47f69d23-6323-40e1-b825-e168709f8fc6@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=st.vk.com&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=fcaee38c10e6&spx=%2F#🌐 №5 VOwl
-vless://47f69d23-6323-40e1-b825-e168709f8fc6@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=music.yandex.ru&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=abf5ca17f045fa&spx=%2F#🌐 №6 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №1 VOwl
