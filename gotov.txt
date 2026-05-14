@@ -2,8 +2,4 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://23d5a0e3-d661-4115-8575-e30794eb45b2@158.160.191.2:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=e035146d93da51a9&spx=%2F#🌐 №1 VOwl
-vless://d17ad0cb-6c8c-4697-ab34-44f6ba98a58c@158.160.191.2:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=7b374423e3f0f5fb&spx=%2F#🌐 №2 VOwl
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №3 VOwl
-vless://23d5a0e3-d661-4115-8575-e30794eb45b2@158.160.191.2:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=7b374423e3f0f5fb&spx=%2F#🌐 №4 VOwl
-vless://d17ad0cb-6c8c-4697-ab34-44f6ba98a58c@158.160.191.2:2447?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dnd.wb.ru&pbk=5w9AftPH_705ynMzcG03D3z61O1qegNp6WFL6jOXxRA&sid=e035146d93da51a9&spx=%2F#🌐 №5 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №1 VOwl
