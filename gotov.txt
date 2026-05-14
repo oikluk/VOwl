@@ -2,4 +2,7 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №1 VOwl
+vless://e6dd980c-1978-0019-b689-af2f0399366e@176.108.254.65:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=kG6zs_B1ZlZ5kjeC0WWPSz4B60vk_VeWj_WYsl2mGBw&sid=8a0b9c6d#🌐 №1 VOwl
+vless://d02e981d-99cb-4196-9edf-2ce0c5b2ac0f@158.160.240.14:3449?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dev.tau.vk.ru&pbk=y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8&sid=822d4a48d7c4cbf4&spx=%2F#🌐 №2 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №3 VOwl
+vless://d02e981d-99cb-4196-9edf-2ce0c5b2ac0f@158.160.240.14:3449?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dev.tau.vk.ru&pbk=y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8&sid=9d8e40b1e50c3b63&spx=%2F#🌐 №4 VOwl
