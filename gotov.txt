@@ -2,13 +2,13 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://e6dd980c-1978-0019-b689-af2f0399366e@176.108.254.65:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=kG6zs_B1ZlZ5kjeC0WWPSz4B60vk_VeWj_WYsl2mGBw&sid=8a0b9c6d#🌐 №1 VOwl
-vless://0ea7b079-a9cb-4c68-b184-fead7f5fe3ba@158.160.240.14:3449?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dev.tau.vk.ru&pbk=y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8&sid=9d8e40b1e50c3b63&spx=%2F#🌐 №2 VOwl
-vless://e6ea5a41-ea43-47cc-9b44-2ef0de8c49c7@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=st.vk.com&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=fcaee38c10e6#🌐 №3 VOwl
-vless://25f1947f-63a8-2040-8f3b-b101eed550e7@146.185.243.233:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&host=s2.ws.listwhite.cc&fp=chrome&sni=s3.listwhite.cc#🌐 №4 VOwl
-vless://e6ea5a41-ea43-47cc-9b44-2ef0de8c49c7@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=st.vk.com&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=fcaee38c10e6&spx=%2F#🌐 №5 VOwl
-vless://25f1947f-63a8-2040-8f3b-b101eed550e7@146.185.243.233:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&fp=chrome&sni=s3.listwhite.cc#🌐 №6 VOwl
-vless://e6dd980c-1978-0019-b689-af2f0399366e@176.108.254.65:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=kG6zs_B1ZlZ5kjeC0WWPSz4B60vk_VeWj_WYsl2mGBw&sid=8c0d4e5f#🌐 №7 VOwl
-vless://e6ea5a41-ea43-47cc-9b44-2ef0de8c49c7@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=max.ru&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=9246b2ae&spx=%2F#🌐 №8 VOwl
-vless://e6ea5a41-ea43-47cc-9b44-2ef0de8c49c7@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=music.yandex.ru&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=9246b2ae&spx=%2F#🌐 №9 VOwl
-vless://0ea7b079-a9cb-4c68-b184-fead7f5fe3ba@158.160.240.14:3449?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dev.tau.vk.ru&pbk=y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8&sid=822d4a48d7c4cbf4&spx=%2F#🌐 №10 VOwl
+vless://25f1947f-63a8-2040-8f3b-b101eed550e7@146.185.243.233:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&host=s2.ws.listwhite.cc&fp=chrome&sni=s3.listwhite.cc#🌐 №1 VOwl
+vless://beed7aaa-a11d-4085-b327-b8f1123d8c61@89.208.221.163:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=eh.vk.ru&pbk=dkDy_40iCCrOTCDziuNidIgnqBFKEPK_SfPyKmPOJ2M&sid=ff265b47466b31&spx=%2F#🌐 №2 VOwl
+vless://25f1947f-63a8-2040-8f3b-b101eed550e7@146.185.243.233:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&fp=chrome&sni=s3.listwhite.cc#🌐 №3 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №4 VOwl
+vless://0760d4a2-605d-4cd3-b53c-4c65ea0d9d11@158.160.240.14:3449?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dev.tau.vk.ru&pbk=y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8&sid=822d4a48d7c4cbf4&spx=%2F#🌐 №5 VOwl
+vless://25f1947f-63a8-2040-8f3b-b101eed550e7@87.239.107.130:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&fp=chrome&sni=s1.ws.listwhite.cc#🌐 №6 VOwl
+vless://25f1947f-63a8-2040-8f3b-b101eed550e7@87.239.107.130:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&host=s1.ws.listwhite.cc&fp=chrome&sni=s1.ws.listwhite.cc#🌐 №7 VOwl
+vless://42e83aca-a792-4bf0-b401-5a9cba5293be@46.182.24.52:443?encryption=none&type=grpc&security=reality&mode=gun&fp=chrome&sni=st.vk.com&pbk=NEb4teZd-O_o38QHuCp7M8mSda48yU6BbYev-HJHpXQ&sid=a2ece9f4a5&spx=%2F#🌐 №8 VOwl
+vless://beed7aaa-a11d-4085-b327-b8f1123d8c61@89.208.221.163:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=max.ru&pbk=dkDy_40iCCrOTCDziuNidIgnqBFKEPK_SfPyKmPOJ2M&sid=dec215d635ae&spx=%2F#🌐 №9 VOwl
+vless://0760d4a2-605d-4cd3-b53c-4c65ea0d9d11@158.160.240.14:3449?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=dev.tau.vk.ru&pbk=y8Xef3AIk7TEbLdu2WkC1NX0jtdxrSs9xsAxLqkSXA8&sid=9d8e40b1e50c3b63&spx=%2F#🌐 №10 VOwl
