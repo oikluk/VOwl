@@ -2,8 +2,8 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://25f1947f-63a8-2040-8f3b-b101eed550e7@146.185.243.233:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&host=s2.ws.listwhite.cc&fp=chrome&sni=s3.listwhite.cc#🌐 №1 VOwl
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №2 VOwl
-vless://25f1947f-63a8-2040-8f3b-b101eed550e7@146.185.243.233:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&fp=chrome&sni=s3.listwhite.cc#🌐 №3 VOwl
-vless://25f1947f-63a8-2040-8f3b-b101eed550e7@87.239.107.130:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&fp=chrome&sni=s1.ws.listwhite.cc#🌐 №4 VOwl
-vless://25f1947f-63a8-2040-8f3b-b101eed550e7@87.239.107.130:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&host=s1.ws.listwhite.cc&fp=chrome&sni=s1.ws.listwhite.cc#🌐 №5 VOwl
+vless://25f1947f-63a8-2040-8f3b-b101eed550e7@146.185.243.233:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&fp=chrome&sni=s3.listwhite.cc#🌐 №1 VOwl
+vless://25f1947f-63a8-2040-8f3b-b101eed550e7@146.185.243.233:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&host=s2.ws.listwhite.cc&fp=chrome&sni=s3.listwhite.cc#🌐 №2 VOwl
+vless://25f1947f-63a8-2040-8f3b-b101eed550e7@87.239.107.130:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&host=s1.ws.listwhite.cc&fp=chrome&sni=s1.ws.listwhite.cc#🌐 №3 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №4 VOwl
+vless://25f1947f-63a8-2040-8f3b-b101eed550e7@87.239.107.130:443?encryption=none&type=ws&security=tls&path=%2Fupload%2Fsession&fp=chrome&sni=s1.ws.listwhite.cc#🌐 №5 VOwl
