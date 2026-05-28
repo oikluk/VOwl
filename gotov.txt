@@ -2,6 +2,6 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://deed05cd-7dfd-4349-821e-2a869ab7048f@194.55.239.221:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🌐 №1 VOwl
-vless://d5760437-86fa-4ffc-8b60-d4a809ce82ea@194.55.239.184:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №2 VOwl
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №3 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №1 VOwl
+vless://b0caec0d-cba0-4762-8b3d-ba77b957a0f4@194.55.239.221:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🌐 №2 VOwl
+vless://47d42d79-4c8e-4e68-af16-4cb4ee7b89b7@194.55.239.191:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №3 VOwl
