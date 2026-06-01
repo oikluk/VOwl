@@ -2,11 +2,7 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://9bf83ae8-01b9-45ee-9a87-e66162dc599c@84.201.138.207:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=super.bestcats-video.online&pbk=HFgjr7QesxPzYbsNHIIgFMKGAivqfEZmp91EW_yDciM#🌐 №1 VOwl
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №2 VOwl
-vless://35366e24-3ed7-480e-b053-bcc22e758e92@158.160.40.207:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=moon1.realm-of-ultramar.ru&pbk=1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw#🌐 №3 VOwl
-vless://23797eeb-ac01-4163-81eb-fd7c766bab32@158.160.40.207:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=moon1.realm-of-ultramar.ru&pbk=1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw#🌐 №4 VOwl
-vless://10b4a80d-a934-46ce-8b10-0334e9eae7ac@158.160.40.207:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=moon1.realm-of-ultramar.ru&pbk=1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw#🌐 №5 VOwl
-vless://b243da92-7531-429b-948f-896d1e52cae5@158.160.40.207:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=moon1.realm-of-ultramar.ru&pbk=1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw#🌐 №6 VOwl
-vless://c4d69096-4026-4da5-9485-20a3da91cb14@77.110.113.49:443?encryption=none&type=grpc&security=reality&mode=gun&serviceName=grpc&fp=chrome&sni=dogs.abvphelp.cc&pbk=B3n6bIbENct3qg8xSRiwwxl1SqGpnqAwq-TEUQ2ojks&sid=882c8346#🌐 №7 VOwl
-vless://6fe38619-8d60-4a20-a58f-60902c4b4c33@158.160.40.207:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=moon1.realm-of-ultramar.ru&pbk=1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw#🌐 №8 VOwl
+vless://adee6219-fd54-455d-9897-cc129b896a8f@185.147.27.36:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=ru-svo-2.blook.network&pbk=A1KLk_6e6jCWZDDWuuzojzSPxQELc2jqK1hHU3ooG34&sid=874db238#🌐 №1 VOwl
+vless://adee6219-fd54-455d-9897-cc129b896a8f@185.147.27.36:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=ru-svo-2.blook.network&pbk=A1KLk_6e6jCWZDDWuuzojzSPxQELc2jqK1hHU3ooG34&sid=874db238&spx=%2F#🌐 №2 VOwl
+vless://a13a2015-3d9d-40c9-93e2-beb8905752a3@84.201.138.207:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=super.bestcats-video.online&pbk=HFgjr7QesxPzYbsNHIIgFMKGAivqfEZmp91EW_yDciM#🌐 №3 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №4 VOwl
