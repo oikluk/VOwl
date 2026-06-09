@@ -2,12 +2,8 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №1 VOwl
-vless://f7627a16-47bd-4900-a763-2802884064d0@217.149.29.60:443?encryption=none&type=grpc&security=reality&mode=gun&serviceName=moktana.net.v1.StreamService&fp=chrome&sni=se.moktana.app&pbk=C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4&sid=6f3c1b8e5d2a4f7c#🌐 №2 VOwl
-vless://3019a065-f9de-42f3-b547-ebbc06027020@147.45.235.51:443?encryption=none&type=grpc&security=reality&mode=gun&serviceName=moktana.net.v1.StreamService&fp=chrome&sni=nl.moktana.app&pbk=C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4&sid=a1b2c3d4e5f6a7b8#🌐 №3 VOwl
-vless://fde8f78b-ec9b-4047-b288-d712f2d6c08d@217.149.29.60:443?encryption=none&type=grpc&security=reality&mode=gun&serviceName=moktana.net.v1.StreamService&fp=chrome&sni=se.moktana.app&pbk=C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4&sid=2e9f4c7b1a8d6e3f#🌐 №4 VOwl
-vless://39779d26-6119-42e8-bd32-ae7d6313581a@89.223.69.242:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №5 VOwl
-vless://0831464c-ae9f-4984-91c6-830c214588cd@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №6 VOwl
-vless://0831464c-ae9f-4984-91c6-830c214588cd@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=eh.vk.com&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №7 VOwl
-vless://2cfb47db-5b73-43cf-be67-6e28d73df7d4@217.149.29.60:443?encryption=none&type=grpc&security=reality&mode=gun&serviceName=moktana.net.v1.StreamService&fp=chrome&sni=se.moktana.app&pbk=C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4&sid=4a7d3e9f2b8c6a1d#🌐 №8 VOwl
-vless://0831464c-ae9f-4984-91c6-830c214588cd@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №9 VOwl
+vless://a8de1a26-b651-4bce-a6ab-88fd40776698@89.223.69.242:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №1 VOwl
+vless://e5545ceb-e5e7-4741-8ec5-5e7104f9c2ee@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=eh.vk.com&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №2 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №3 VOwl
+vless://e5545ceb-e5e7-4741-8ec5-5e7104f9c2ee@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №4 VOwl
+vless://e5545ceb-e5e7-4741-8ec5-5e7104f9c2ee@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №5 VOwl
