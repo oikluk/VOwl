@@ -2,14 +2,9 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №1 VOwl
-vless://c2b6fe58-6720-4082-986c-07af0dbc76bc@130.49.179.94:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=fr-qp.api.dznn.net&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=0a6ba2716a409da6#🌐 №2 VOwl
-vless://c8964c3c-e041-450c-87ae-9c09b9ba7cc8@89.223.69.242:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №3 VOwl
-vless://db059c92-c1f1-4c27-b8fe-e8fdfa0233f1@213.171.27.47:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=ru2.chilbi.ru&pbk=LHWt5iTxMgp7OngY89Ozh1QzboISnIgYZ2CjMNq7LEs&sid=a659b6569bd804d3#🌐 №4 VOwl
-vless://371f9015-3e25-49c6-83ab-ea6b487719ba@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №5 VOwl
-vless://7c112e33-83e1-4282-bc42-ef8c9c39a3ed@130.49.179.94:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=fr-qp.api.dznn.net&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=19aa22f681923dc8#🌐 №6 VOwl
-vless://9c04338e-99e4-4d7a-b829-bcbd94bd68c0@185.87.193.18:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ru5.cdn-global.pro&pbk=AMrov2u1t8ko42zK06QcgfrosuZoZnN_sYolKlcApwc&sid=6ae7c20e8b7a67de#🌐 №7 VOwl
-vless://371f9015-3e25-49c6-83ab-ea6b487719ba@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=eh.vk.com&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №8 VOwl
-vless://9f5ce1f6-d223-4f80-b848-72b7d662f189@217.149.25.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=rf1.helper-internet.com&pbk=W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE&sid=ff776ff77be48b88#🌐 №9 VOwl
-vless://371f9015-3e25-49c6-83ab-ea6b487719ba@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №10 VOwl
-vless://9c04338e-99e4-4d7a-b829-bcbd94bd68c0@185.87.193.18:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ru5.cdn-global.pro&pbk=AMrov2u1t8ko42zK06QcgfrosuZoZnN_sYolKlcApwc&sid=6ae7c20e8b7a67de&spx=%2F#🌐 №11 VOwl
+vless://cfd8a3de-ab71-418d-8614-17233e8136ef@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=eh.vk.com&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №1 VOwl
+vless://cfd8a3de-ab71-418d-8614-17233e8136ef@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №2 VOwl
+vless://0a1afeba-642f-11f1-9ca8-da0cb7a547ac@217.199.254.135:2053?encryption=none&type=grpc&security=reality&mode=gun&serviceName=grpc-direct&fp=chrome&sni=cam-msk-3.videomonitor.cloud&pbk=WOf2IaQzzj3Kx0uIVKMu0njVKXyVJN-KDQ9ZFtOIcis&sid=d6381024c55afb14#🌐 №3 VOwl
+vless://505ccb58-e828-4332-afb4-80afe3fe7a95@89.223.69.242:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №4 VOwl
+vless://cfd8a3de-ab71-418d-8614-17233e8136ef@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №5 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №6 VOwl
