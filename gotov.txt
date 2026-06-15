@@ -2,8 +2,9 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://d0101576-5779-4dbe-9640-966b5b0435e2@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №1 VOwl
-vless://d0101576-5779-4dbe-9640-966b5b0435e2@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=eh.vk.com&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №2 VOwl
-vless://d0101576-5779-4dbe-9640-966b5b0435e2@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №3 VOwl
+vless://3a972c48-0a3b-4ccd-8238-156bc38e3be0@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=eh.vk.com&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №1 VOwl
+vless://674ad79b-31ae-45e3-8877-d9d3ebac5623@89.223.69.242:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №2 VOwl
+vless://3a972c48-0a3b-4ccd-8238-156bc38e3be0@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №3 VOwl
 vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №4 VOwl
-vless://aa249676-280e-4e66-b126-71431dcb387d@89.223.69.242:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №5 VOwl
+vless://3a972c48-0a3b-4ccd-8238-156bc38e3be0@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №5 VOwl
+vless://f5a2c547-734e-4655-8069-618e38e2cd5c@80.90.188.188:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=ru9.cdn-global.pro&pbk=VzcHDR57dKZ6aPF1VchAbeKfSHKt_a4pjt-eOpoAG0o&sid=893c5832052a1923#🌐 №6 VOwl
