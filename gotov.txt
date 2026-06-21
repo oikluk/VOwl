@@ -2,11 +2,11 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://88f0a160-5ece-423b-b976-3066056a6429@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №1 VOwl
-vless://22e02054-6833-400f-b994-ff4a4471bb47@80.90.185.66:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №2 VOwl
+vless://d936b9f1-dff0-46e3-a303-d433f953045e@80.90.185.66:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №1 VOwl
+vless://dc29dcd0-1a03-4e14-a600-74f4fcc6cff4@147.45.162.53:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=dl.google.com&pbk=oGbQE8hz8cTrij4h9ystmsYa02Z70tbkes_CitR27Rc#🌐 №2 VOwl
 vless://967064b5-3272-431e-8dce-9519acfb94be@130.49.190.94:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=sw.zestful.bond&pbk=KS0F6q2PTY1s6y2sH5PdrznYqprIkUBtS1masvcrJjo&sid=823257b7b9ab9d02#🌐 №3 VOwl
-vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №4 VOwl
-vless://88f0a160-5ece-423b-b976-3066056a6429@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=eh.vk.com&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №5 VOwl
-vless://dc29dcd0-1a03-4e14-a600-74f4fcc6cff4@147.45.162.53:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=dl.google.com&pbk=oGbQE8hz8cTrij4h9ystmsYa02Z70tbkes_CitR27Rc#🌐 №6 VOwl
-vless://dc29dcd0-1a03-4e14-a600-74f4fcc6cff4@147.45.162.53:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=dl.google.com&pbk=oGbQE8hz8cTrij4h9ystmsYa02Z70tbkes_CitR27Rc#🌐 №7 VOwl
-vless://88f0a160-5ece-423b-b976-3066056a6429@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №8 VOwl
+vless://dc29dcd0-1a03-4e14-a600-74f4fcc6cff4@147.45.162.53:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=dl.google.com&pbk=oGbQE8hz8cTrij4h9ystmsYa02Z70tbkes_CitR27Rc#🌐 №4 VOwl
+vless://fddff6a3-712b-4ab6-bb86-8e5d4fe9d159@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=eh.vk.com&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №5 VOwl
+vless://fddff6a3-712b-4ab6-bb86-8e5d4fe9d159@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №6 VOwl
+vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №7 VOwl
+vless://fddff6a3-712b-4ab6-bb86-8e5d4fe9d159@62.113.43.195:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&sid=abbcd128#🌐 №8 VOwl
