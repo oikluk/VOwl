@@ -2,10 +2,9 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://60300afa-3366-4ae3-959a-7b50438acebb@91.243.82.42:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=tiger.ickly.co.uk&pbk=WRLY3yTNIqMcu-R0TwkAS4M9uMP8R1CnDVe_RvNvBWg&sid=46d7e37e#🌐 №1 VOwl
+vless://ca214a2d-6568-4b62-b4a0-5686d150a2e0@80.90.185.66:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №1 VOwl
 vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@91.196.33.216:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=u.malleev.ru&pbk=ZrTR1U8J1h4XtIzjKLznaMY6U_fogsndbuHlJmK-Ti4&spx=%2F#🌐 №2 VOwl
-vless://c8ff2b02-99e1-4238-9454-cab8ed0dbe4f@80.90.185.66:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=ads.x5.ru&pbk=K42aHYxM9Lt1Tl4vF-OniHV5pNju-wnB_opA-hVihgs&sid=1000#🌐 №3 VOwl
-vless://60300afa-3366-4ae3-959a-7b50438acebb@82.202.142.204:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=bear.wequ.host&pbk=HAX7wOHrpxsVsDXpcE5MXaXdz3_GR3Hpf56YIDbmsyQ&sid=cdba5a3c#🌐 №4 VOwl
+vless://967064b5-3272-431e-8dce-9519acfb94be@130.49.190.94:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=sw.zestful.bond&pbk=KS0F6q2PTY1s6y2sH5PdrznYqprIkUBtS1masvcrJjo&sid=823257b7b9ab9d02#🌐 №3 VOwl
+vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@91.196.33.216:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=u.malleev.ru&pbk=ZrTR1U8J1h4XtIzjKLznaMY6U_fogsndbuHlJmK-Ti4#🌐 №4 VOwl
 vless://f5a3bf49-07ca-0021-a96b-9606781e3600@138.124.100.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4&security=reality&sid=4c8d1e0f&sni=www.amd.com&type=tcp#🌐 №5 VOwl
-vless://cf038a28-8f85-41fc-9e86-ba99a3fdd0d9@91.196.33.216:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=u.malleev.ru&pbk=ZrTR1U8J1h4XtIzjKLznaMY6U_fogsndbuHlJmK-Ti4#🌐 №6 VOwl
-vless://60300afa-3366-4ae3-959a-7b50438acebb@91.243.82.42:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=edge&sni=tiger.ickly.co.uk&pbk=WRLY3yTNIqMcu-R0TwkAS4M9uMP8R1CnDVe_RvNvBWg&sid=46d7e37e#🌐 №7 VOwl
+vless://60300afa-3366-4ae3-959a-7b50438acebb@82.202.142.204:9443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=bear.wequ.host&pbk=HAX7wOHrpxsVsDXpcE5MXaXdz3_GR3Hpf56YIDbmsyQ&sid=cdba5a3c#🌐 №6 VOwl
