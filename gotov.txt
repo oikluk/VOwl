@@ -2,13 +2,6 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://1cf3c15c-16ce-46cc-8a96-b33c33b8a20f@176.109.88.223:443?encryption=none&fp=chrome&host=2.26.148.147.tyr-agentstvo.tech&path=%2Fwebsocket&security=tls&sni=2.26.148.147.tyr-agentstvo.tech&type=ws#🌐 №1 VOwl
-vless://48deac0f-0ecd-4dc4-a760-6f180489e275@213.219.212.35:443?encryption=none&fp=safari&security=tls&sni=cluster-usa.zmeet.video&type=raw#🌐 №2 VOwl
-vless://48deac0f-0ecd-4dc4-a760-6f180489e275@213.219.212.35:443?encryption=none&fp=firefox&security=tls&sni=cluster-usa.zmeet.video&type=raw#🌐 №3 VOwl
-vless://48deac0f-0ecd-4dc4-a760-6f180489e275@46.243.233.35:443?encryption=none&fp=chrome&security=tls&sni=cluster-usa.zmeet.video&type=raw#🌐 №4 VOwl
-vless://48deac0f-0ecd-4dc4-a760-6f180489e275@213.219.212.35:443?encryption=none&fp=chrome&security=tls&sni=cluster-usa.zmeet.video&type=raw#🌐 №5 VOwl
-vless://1cf3c15c-16ce-46cc-8a96-b33c33b8a20f@176.109.88.223:443?encryption=none&fp=firefox&host=2.26.148.147.tyr-agentstvo.tech&path=%2Fwebsocket&security=tls&sni=2.26.148.147.tyr-agentstvo.tech&type=ws#🌐 №6 VOwl
-vless://48deac0f-0ecd-4dc4-a760-6f180489e275@213.219.212.35:443?encryption=none&fp=ios&security=tls&sni=cluster-usa.zmeet.video&type=raw#🌐 №7 VOwl
-vless://1cf3c15c-16ce-46cc-8a96-b33c33b8a20f@176.109.88.223:443?encryption=none&fp=android&host=2.26.148.147.tyr-agentstvo.tech&path=%2Fwebsocket&security=tls&sni=2.26.148.147.tyr-agentstvo.tech&type=ws#🌐 №8 VOwl
-vless://1cf3c15c-16ce-46cc-8a96-b33c33b8a20f@176.109.88.223:443?encryption=none&fp=ios&host=2.26.148.147.tyr-agentstvo.tech&path=%2Fwebsocket&security=tls&sni=2.26.148.147.tyr-agentstvo.tech&type=ws#🌐 №9 VOwl
-vless://1cf3c15c-16ce-46cc-8a96-b33c33b8a20f@176.109.88.223:443?encryption=none&fp=qq&host=2.26.148.147.tyr-agentstvo.tech&path=%2Fwebsocket&security=tls&sni=2.26.148.147.tyr-agentstvo.tech&type=ws#🌐 №10 VOwl
+vless://9323430f-0c13-4cd0-a84b-639fabcbe018@95.163.232.180:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=zEo62zAN5Sc2iAa5sGQZPWkpb5KeZd2VLQtUGgKNLQ0&security=reality&sid=12&sni=msk.plombir.me&type=raw#🌐 №1 VOwl
+vless://9323430f-0c13-4cd0-a84b-639fabcbe018@95.163.232.180:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=L9a1SuC_Kdk6YsQMgZ4CXy6N98tVNL8u4y882LzE9yo&security=reality&sid=11&sni=msk.plombir.me&type=raw#🌐 №2 VOwl
+vless://58756cd2-5146-427c-bfa9-ef8ec5cbbf8e@188.225.57.227:443?encryption=none&extra=null&fp=firefox&host=cdn.nodes.ac&mode=stream-one&path=%2Fapi%2Fv2%2Fmedia%2Fstream&pbk=oQqnxLVZveJ_o8SpbvRf6DW02pbK0_J7oH_vkLEQPVo&security=reality&sid=90f9ae53d5e0a696&sni=cdn.nodes.ac&spx=%2F&type=xhttp#🌐 №3 VOwl
