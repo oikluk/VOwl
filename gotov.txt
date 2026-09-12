@@ -2,5 +2,10 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://ecf728d9-1555-4e12-b178-1d8bd98465e4@46.243.235.188:443?encryption=none&flow=xtls-rprx-vision&fp=ios&pbk=_ilhBTibNauMOEUqylnlBAUTYiqHHtmEDXkx18SHCR4&security=reality&sni=pool.dataroute.biz&spx=%2F&type=raw#🌐 №1 VOwl
-vless://5d16ac22-6eea-426f-b778-6f4c2961faef@31.131.255.35:9894?encryption=none&fp=safari&mode=gun&pbk=sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc&security=reality&serviceName=grpc-tunnel&sid=aa&sni=dl.google.com&type=grpc#🌐 №2 VOwl
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@31.131.255.35:9894?encryption=none&fp=safari&mode=gun&pbk=sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc&security=reality&serviceName=grpc-tunnel&sid=aa&sni=dl.google.com&type=grpc#🌐 №1 VOwl
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@188.68.216.38:9882?encryption=none&fp=qq&mode=multi&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&security=reality&serviceName=grpc-tunnel&sid=aa&sni=dl.google.com&type=grpc#🌐 №2 VOwl
+vless://2b3e8750-b944-42fc-b36e-ec2c64b48a98@185.141.227.155:20002?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=_ilhBTibNauMOEUqylnlBAUTYiqHHtmEDXkx18SHCR4&security=reality&sni=pool.dataroute.biz&spx=%2F&type=raw#🌐 №3 VOwl
+vless://ecf728d9-1555-4e12-b178-1d8bd98465e4@46.243.235.188:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=_ilhBTibNauMOEUqylnlBAUTYiqHHtmEDXkx18SHCR4&security=reality&sni=pool.dataroute.biz&spx=%2F&type=raw#🌐 №4 VOwl
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@188.68.216.38:9891?encryption=none&fp=firefox&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aabbccdd&sni=dl.google.com&type=grpc#🌐 №5 VOwl
+vless://2b3e8750-b944-42fc-b36e-ec2c64b48a98@185.141.227.155:20002?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=_ilhBTibNauMOEUqylnlBAUTYiqHHtmEDXkx18SHCR4&security=reality&sni=pool.dataroute.biz&type=raw#🌐 №6 VOwl
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@188.68.216.38:9891?encryption=none&fp=qq&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aabbccdd&sni=dl.google.com&type=grpc#🌐 №7 VOwl
