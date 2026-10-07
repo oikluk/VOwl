@@ -2,6 +2,5 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.252.139:9881?encryption=none&fp=ios&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aabb&sni=dl.google.com&type=grpc#🌐 №1 VOwl
-vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.252.139:9881?encryption=none&fp=safari&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aabb&sni=dl.google.com&type=grpc#🌐 №2 VOwl
-vless://053682f4-c584-46df-ad81-069dec5f64f0@45.89.190.245:8443?encryption=none&fp=safari&host=de.gokonstantin.com&path=%2Fcdnws&security=tls&sni=de.gokonstantin.com&type=ws#🌐 №3 VOwl
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.252.139:9881?encryption=none&fp=safari&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aabb&sni=dl.google.com&type=grpc#🌐 №1 VOwl
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.252.139:9881?encryption=none&fp=ios&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aabb&sni=dl.google.com&type=grpc#🌐 №2 VOwl
