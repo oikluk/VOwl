@@ -2,4 +2,7 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://c4506599-1720-443d-8425-5ba4002e5b18@31.177.111.140:443?alpn=http%2F1.1&encryption=none&fp=firefox&path=%2Fclient%2Fcollect%2F6b3a32fb9f37%2F&security=tls&sni=cdn.rucdncomp.pro&type=ws#🌐 №1 VOwl
+vless://4c346148-ece9-487a-bffb-ba5a399b2d71@188.225.83.133:443?encryption=none&fp=random&mode=gun&pbk=JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnodtwx.artemida.live&type=grpc#🌐 №1 VOwl
+vless://4c346148-ece9-487a-bffb-ba5a399b2d71@188.225.83.133:443?encryption=none&fp=firefox&mode=gun&pbk=JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnodtwx.artemida.live&type=grpc#🌐 №2 VOwl
+vless://741809be-e44e-0008-b411-bf66f0ae3860@147.45.213.54:443?encryption=none&flow=xtls-rprx-vision&fp=ios&pbk=6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY&security=reality&sid=1c3e8241a8743df9&sni=diffoscope.com&type=raw#🌐 №3 VOwl
+vless://0e538403-1c73-479a-b121-121087fa59af@46.254.17.226:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=rDu7DyU9KClauBhK7iQeP1Znx4_OAMJqMJp4wlJ5nxc&security=reality&sid=b2baccb38dc00f96&sni=filecache.ru&type=raw#🌐 №4 VOwl
