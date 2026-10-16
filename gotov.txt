@@ -2,4 +2,6 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://953358cb-82ba-4296-960d-6d2ec3468f4c@78.159.240.159:10654?encryption=none&extra=null&fp=random&mode=packet-up&path=%2Fxhttp_client_upload&pbk=W6Y-zf2KrmIKVAEYuxpzQhxMyQliUnEo9LAZYEPAlEI&security=reality&sid=d14d6fc0&sni=pl314j2.sysopnova.art&type=xhttp#🌐 №1 VOwl
+vless://4c346148-ece9-487a-bffb-ba5a399b2d71@188.225.83.133:443?encryption=none&fp=chrome&mode=gun&pbk=JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnodtwx.artemida.live&type=grpc#🌐 №1 VOwl
+vless://4c346148-ece9-487a-bffb-ba5a399b2d71@188.225.83.133:443?encryption=none&fp=firefox&mode=gun&pbk=JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnodtwx.artemida.live&type=grpc#🌐 №2 VOwl
+vless://4c346148-ece9-487a-bffb-ba5a399b2d71@188.225.83.133:443?encryption=none&fp=random&mode=gun&pbk=JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnodtwx.artemida.live&type=grpc#🌐 №3 VOwl
