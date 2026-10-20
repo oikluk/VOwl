@@ -2,8 +2,3 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://0a5e61ea-1498-4655-8d36-4f54dfb1c44a@188.225.72.65:27443?encryption=none&fp=firefox&mode=gun&pbk=zIF5SLjmd3gzvGPhEBKjqLv8_-7MOHMpJciVEehL0C8&security=reality&serviceName=grpc&sni=static.polina.mom&type=grpc#🌐 №1 VOwl
-vless://8dcc00cb-789c-4ddb-bdde-16db5bdc8929@188.225.72.65:27443?encryption=none&fp=firefox&mode=gun&pbk=zIF5SLjmd3gzvGPhEBKjqLv8_-7MOHMpJciVEehL0C8&security=reality&serviceName=grpc&sni=static.polina.mom&type=grpc#🌐 №2 VOwl
-vless://c415a098-fd00-4ae3-b39c-50a8c52e7414@188.225.72.65:27443?encryption=none&fp=firefox&mode=gun&pbk=zIF5SLjmd3gzvGPhEBKjqLv8_-7MOHMpJciVEehL0C8&security=reality&serviceName=grpc&sni=static.polina.mom&type=grpc#🌐 №3 VOwl
-vless://3ce256d5-9bfa-4bf4-94b9-460f125b0b09@188.225.72.65:27443?encryption=none&fp=firefox&mode=gun&pbk=zIF5SLjmd3gzvGPhEBKjqLv8_-7MOHMpJciVEehL0C8&security=reality&serviceName=grpc&sni=static.polina.mom&type=grpc#🌐 №4 VOwl
-vless://19e0ff76-2eb3-4b17-842f-ac57094cb35e@188.225.72.65:27443?encryption=none&fp=firefox&mode=gun&pbk=zIF5SLjmd3gzvGPhEBKjqLv8_-7MOHMpJciVEehL0C8&security=reality&serviceName=grpc&sni=static.polina.mom&type=grpc#🌐 №5 VOwl
