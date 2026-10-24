@@ -2,5 +2,13 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://66dc1927-8528-4f1e-bb74-5a9c7aa8ea8c@188.225.27.229:443?encryption=none&flow=xtls-rprx-vision&fp=safari&pbk=8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU&security=reality&sid=88d9dc52ef39c8bd&sni=bridge.rkitman.ru&type=raw#🌐 №1 VOwl
-vless://c8b3c1d7-4294-4f30-9e5b-e4693b64d518@185.86.145.142:443?alpn=http%2F1.1&encryption=none&fp=edge&host=deliverya.online&path=%2Fadrws&security=tls&sni=deliverya.online&type=ws#🌐 №2 VOwl
+vless://4c346148-ece9-487a-bffb-ba5a399b2d71@188.225.83.133:443?encryption=none&fp=random&mode=gun&pbk=JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnodtwx.artemida.live&type=grpc#🌐 №1 VOwl
+vless://c99063b9-e86f-4320-bd45-f7e1acdc0f87@91.215.40.102:443?alpn=h2&encryption=none&fp=firefox&mode=multi&security=tls&serviceName=%2Fv1%2Fsegment%2F8a3f1c5be24d2854%2FTun%7CFetch&sni=plw-guard-1.harknmav.fun&type=grpc#🌐 №2 VOwl
+vless://c99063b9-e86f-4320-bd45-f7e1acdc0f87@91.215.40.30:443?alpn=h2&encryption=none&fp=firefox&mode=multi&security=tls&serviceName=%2Fv1%2Fsegment%2F8a3f1c5be24d2854%2FTun%7CFetch&sni=plw-guard-1.harknmav.fun&type=grpc#🌐 №3 VOwl
+vless://c99063b9-e86f-4320-bd45-f7e1acdc0f87@91.215.40.234:443?alpn=h2&encryption=none&extra=null&fp=ios&host=caw-guard-1.harknmav.fun&mode=stream-one&path=%2Fapi%2Fv2%2Fupload%2F8a3f1c5be24d2854&security=tls&sni=caw-guard-1.harknmav.fun&type=xhttp#🌐 №4 VOwl
+vless://4c346148-ece9-487a-bffb-ba5a399b2d71@188.225.83.133:443?encryption=none&fp=ios&mode=gun&pbk=JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnodtwx.artemida.live&type=grpc#🌐 №5 VOwl
+vless://c99063b9-e86f-4320-bd45-f7e1acdc0f87@91.215.40.234:443?alpn=h2&encryption=none&extra=null&fp=firefox&host=caw-guard-1.harknmav.fun&mode=stream-one&path=%2Fapi%2Fv2%2Fupload%2F8a3f1c5be24d2854&security=tls&sni=caw-guard-1.harknmav.fun&type=xhttp#🌐 №6 VOwl
+vless://c99063b9-e86f-4320-bd45-f7e1acdc0f87@91.215.40.102:443?alpn=h2&encryption=none&fp=chrome&mode=multi&security=tls&serviceName=%2Fv1%2Fsegment%2F8a3f1c5be24d2854%2FTun%7CFetch&sni=plw-guard-1.harknmav.fun&type=grpc#🌐 №7 VOwl
+vless://c99063b9-e86f-4320-bd45-f7e1acdc0f87@91.215.40.30:443?alpn=h2&encryption=none&fp=qq&mode=multi&security=tls&serviceName=%2Fv1%2Fsegment%2F8a3f1c5be24d2854%2FTun%7CFetch&sni=plw-guard-1.harknmav.fun&type=grpc#🌐 №8 VOwl
+vless://4c346148-ece9-487a-bffb-ba5a399b2d71@188.225.83.133:443?encryption=none&fp=qq&mode=gun&pbk=JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnodtwx.artemida.live&type=grpc#🌐 №9 VOwl
+vless://66dc1927-8528-4f1e-bb74-5a9c7aa8ea8c@188.225.27.229:443?encryption=none&flow=xtls-rprx-vision&fp=safari&pbk=8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU&security=reality&sid=88d9dc52ef39c8bd&sni=bridge.rkitman.ru&type=raw#🌐 №10 VOwl
