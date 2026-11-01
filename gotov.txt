@@ -2,8 +2,3 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://a5212bcb-ab85-459a-bec6-9f259eeeebfa@46.254.19.164:443?encryption=none&fp=safari&pbk=3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM&security=reality&sid=8937c9ed2d470352&sni=wtb.tems.bet&type=raw#🌐 №1 VOwl
-vless://a5212bcb-ab85-459a-bec6-9f259eeeebfa@46.254.19.164:443?encryption=none&fp=firefox&pbk=3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM&security=reality&sid=8937c9ed2d470352&sni=wtb.tems.bet&type=raw#🌐 №2 VOwl
-vless://a5212bcb-ab85-459a-bec6-9f259eeeebfa@46.254.19.164:443?encryption=none&fp=chrome&pbk=3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM&security=reality&sid=8937c9ed2d470352&sni=wtb.tems.bet&type=raw#🌐 №3 VOwl
-vless://a5212bcb-ab85-459a-bec6-9f259eeeebfa@46.254.19.164:443?encryption=none&fp=random&pbk=3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM&security=reality&sid=8937c9ed2d470352&sni=wtb.tems.bet&type=raw#🌐 №4 VOwl
-vless://a5212bcb-ab85-459a-bec6-9f259eeeebfa@46.254.19.164:443?encryption=none&fp=ios&pbk=3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM&security=reality&sid=8937c9ed2d470352&sni=wtb.tems.bet&type=raw#🌐 №5 VOwl
