@@ -2,3 +2,6 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
+vless://96c760c3-6949-4a00-b603-16173b9b1a66@185.86.145.223:9449?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=VB9m1gQWzJWBXa49PMVGKkI94KN0XRCpC1BSpQP7yzk&security=reality&sid=0cc15b71a8a6a380&sni=tmuk1.trust.rumost.top&type=raw#🌐 №1 VOwl
+vless://8d44611d-e9ca-4939-a9a1-ff9b4b9d3f08@31.177.111.241:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=t192lvTN6ZtCch9LSAkLOKnKuyYdLLaTJx8tn3VRHz0&security=reality&sid=dfdee30a27b11f0f&sni=yfivst4pvut13bd351og.sellerape.cc&spx=%2F&type=raw#🌐 №2 VOwl
+vless://96c760c3-6949-4a00-b603-16173b9b1a66@185.86.145.223:9449?encryption=none&flow=xtls-rprx-vision&fp=safari&pbk=VB9m1gQWzJWBXa49PMVGKkI94KN0XRCpC1BSpQP7yzk&security=reality&sid=0cc15b71a8a6a380&sni=tmuk1.trust.rumost.top&type=raw#🌐 №3 VOwl
