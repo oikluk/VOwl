@@ -2,4 +2,4 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://b73b2ee3-5bb3-44d4-808f-0891a408a9bd@87.228.32.97:443?encryption=none&fp=ios&pbk=4DcpJKG3IJEXsldz6uNof1o4V3SZ1MD3r_TiDthZEzw&security=reality&sni=city.lostpool.org&type=raw#🌐 №1 VOwl
+vless://b29dbea6-ca59-4d9f-baac-596dc8402812@188.225.25.35:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s&security=reality&sid=4951a2313524dd8f&sni=ru.starkclaude.top&type=raw#🌐 №1 VOwl
