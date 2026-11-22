@@ -2,5 +2,3 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://3e1798b2-8b39-49e8-9f5f-f3235a16bd66@213.178.155.234:8443?alpn=http%2F1.1&encryption=none&fp=firefox&path=%2Fapi%2Fv4%2Fmedia%2Fsession&security=tls&sni=portal-edge.tcpshield.fun&type=ws#🌐 №1 VOwl
-vless://488f41fb-b1e6-4b21-9206-837d016167cb@188.225.32.175:443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=8rdhihFgU72DVkhH6ROS9j2WyNc_spuiGXrT_YvNJ0M&security=reality&sid=f51bc11ebd9f2835&sni=contract.starsov.pro&type=raw#🌐 №2 VOwl
