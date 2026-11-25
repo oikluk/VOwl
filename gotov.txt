@@ -2,7 +2,5 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://00da270a-c35a-4102-afbc-2788ef40003a@185.229.9.174:49094?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=Td6o-BHBTNeIugm0r2RjtHgYFkhbRoInB1VxEQtOjyg&security=reality&sid=c95f&sni=max.ru&type=raw#🌐 №1 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@46.243.232.149:443?alpn=http%2F1.1&encryption=none&fp=safari&host=e3.cdnwh.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=e3.cdnwh.icu&type=ws#🌐 №2 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@46.243.232.149:443?alpn=http%2F1.1&encryption=none&fp=chrome&host=e3.cdnwh.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=e3.cdnwh.icu&type=ws#🌐 №3 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@46.243.232.149:443?alpn=http%2F1.1&encryption=none&fp=firefox&host=e3.cdnwh.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=e3.cdnwh.icu&type=ws#🌐 №4 VOwl
+vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.56.100:443?alpn=http%2F1.1&encryption=none&fp=firefox&host=e2.cdnwh.icu&path=%2Fstream%2Fsegment%2F3078a41dd7eb%2F&security=tls&sni=e2.cdnwh.icu&type=ws#🌐 №1 VOwl
+vless://d3d4e690-db61-4b84-8687-7c1ff79c89ff@188.225.32.252:443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=8rdhihFgU72DVkhH6ROS9j2WyNc_spuiGXrT_YvNJ0M&security=reality&sid=f51bc11ebd9f2835&sni=contract.starsov.pro&spx=%2F&type=raw#🌐 №2 VOwl
