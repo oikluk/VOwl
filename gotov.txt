@@ -2,12 +2,5 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@46.243.232.149:443?alpn=http%2F1.1&encryption=none&fp=chrome&host=e3.cdnwh.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=e3.cdnwh.icu&type=ws#🌐 №1 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@46.243.232.149:443?alpn=http%2F1.1&encryption=none&fp=firefox&host=e3.cdnwh.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=e3.cdnwh.icu&type=ws#🌐 №2 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@46.243.232.149:443?alpn=http%2F1.1&encryption=none&fp=firefox&host=devcdn.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=devcdn.icu&type=ws#🌐 №3 VOwl
-vless://37af0181-5598-4aad-a040-d926bcb65757@185.22.234.129:443?alpn=http%2F1.1&encryption=none&fp=chrome&path=%2Fuseraction%2Fcollect%2F8a64b355ef0c%2F&security=tls&sni=smartcdn.top&type=ws#🌐 №4 VOwl
-vless://37af0181-5598-4aad-a040-d926bcb65757@185.22.234.129:443?alpn=http%2F1.1&encryption=none&fp=firefox&path=%2Fuseraction%2Fcollect%2F8a64b355ef0c%2F&security=tls&sni=smartcdn.top&type=ws#🌐 №5 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.56.100:443?alpn=http%2F1.1&encryption=none&fp=ios&host=e2.cdnwh.icu&path=%2Fstream%2Fsegment%2F3078a41dd7eb%2F&security=tls&sni=e2.cdnwh.icu&type=ws#🌐 №6 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@46.243.232.78:443?alpn=http%2F1.1&encryption=none&fp=firefox&host=e2.cdnwh.icu&path=%2Fstream%2Fsegment%2F3078a41dd7eb%2F&security=tls&sni=e2.cdnwh.icu&type=ws#🌐 №7 VOwl
-vless://37af0181-5598-4aad-a040-d926bcb65757@185.22.234.129:443?alpn=http%2F1.1&encryption=none&fp=safari&path=%2Fuseraction%2Fcollect%2F8a64b355ef0c%2F&security=tls&sni=smartcdn.top&type=ws#🌐 №8 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@46.243.232.149:443?alpn=http%2F1.1&encryption=none&fp=safari&host=e3.cdnwh.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=e3.cdnwh.icu&type=ws#🌐 №9 VOwl
+vless://34899740-16ab-4f8a-bc13-051cf6f62a86@188.225.45.237:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=YZtDA-Mz6GSlPnrhnQkSpzj8TSaGDcMjukrGI_xFg1Y&security=reality&sid=d9c79602&sni=wl.tw.daugava-analytics.com&type=raw#🌐 №1 VOwl
+vless://37af0181-5598-4aad-a040-d926bcb65757@185.22.234.129:443?alpn=http%2F1.1&encryption=none&fp=chrome&path=%2Fuseraction%2Fcollect%2F8a64b355ef0c%2F&security=tls&sni=smartcdn.top&type=ws#🌐 №2 VOwl
