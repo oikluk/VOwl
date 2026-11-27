@@ -2,11 +2,7 @@
 #profile-title: 🌐 VOwl
 #announce: Не используй на сервисах из Белого Списка
 
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.33.67:443?encryption=none&fp=firefox&path=%2Fstream%2Fsegment%2F3078a41dd7eb%2F&security=tls&sni=e2.cdnwh.icu&type=ws#🌐 №1 VOwl
-vless://34899740-16ab-4f8a-bc13-051cf6f62a86@188.225.35.83:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=YZtDA-Mz6GSlPnrhnQkSpzj8TSaGDcMjukrGI_xFg1Y&security=reality&sid=d9c79602&sni=wl.tw.daugava-analytics.com&type=raw#🌐 №2 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.56.100:443?alpn=http%2F1.1&encryption=none&fp=ios&host=e2.cdnwh.icu&path=%2Fstream%2Fsegment%2F3078a41dd7eb%2F&security=tls&sni=e2.cdnwh.icu&type=ws#🌐 №3 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.33.67:443?alpn=http%2F1.1&encryption=none&fp=firefox&host=devcdn.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=devcdn.icu&type=ws#🌐 №4 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.33.67:443?alpn=http%2F1.1&encryption=none&fp=firefox&host=x55cf8ug.devcdn.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=x55cf8ug.devcdn.icu&type=ws#🌐 №5 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.33.67:443?alpn=http%2F1.1&encryption=none&fp=edge&host=x55cf8ug.devcdn.icu&path=%2Fedge%2Fchunk%2Fb2265efffa29%2F&security=tls&sni=x55cf8ug.devcdn.icu&type=ws#🌐 №6 VOwl
-vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.33.67:443?alpn=http%2F1.1&encryption=none&fp=random&host=e2.cdnwh.icu&path=%2Fstream%2Fsegment%2F3078a41dd7eb%2F&security=tls&sni=e2.cdnwh.icu&type=ws#🌐 №7 VOwl
-vless://34899740-16ab-4f8a-bc13-051cf6f62a86@188.225.45.237:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=YZtDA-Mz6GSlPnrhnQkSpzj8TSaGDcMjukrGI_xFg1Y&security=reality&sid=d9c79602&sni=wl.tw.daugava-analytics.com&type=raw#🌐 №8 VOwl
+vless://34899740-16ab-4f8a-bc13-051cf6f62a86@188.225.45.237:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=YZtDA-Mz6GSlPnrhnQkSpzj8TSaGDcMjukrGI_xFg1Y&security=reality&sid=d9c79602&sni=wl.tw.daugava-analytics.com&type=raw#🌐 №1 VOwl
+vless://34899740-16ab-4f8a-bc13-051cf6f62a86@188.225.45.237:443?encryption=none&flow=xtls-rprx-vision&fp=random&pbk=YZtDA-Mz6GSlPnrhnQkSpzj8TSaGDcMjukrGI_xFg1Y&security=reality&sid=d9c79602&sni=wl.tw.daugava-analytics.com&type=raw#🌐 №2 VOwl
+vless://00da270a-c35a-4102-afbc-2788ef40003a@185.229.9.174:49094?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=Td6o-BHBTNeIugm0r2RjtHgYFkhbRoInB1VxEQtOjyg&security=reality&sid=c95f&sni=max.ru&type=raw#🌐 №3 VOwl
+vless://34899740-16ab-4f8a-bc13-051cf6f62a86@188.225.35.83:443?encryption=none&flow=xtls-rprx-vision&fp=safari&pbk=YZtDA-Mz6GSlPnrhnQkSpzj8TSaGDcMjukrGI_xFg1Y&security=reality&sid=d9c79602&sni=wl.tw.daugava-analytics.com&type=raw#🌐 №4 VOwl
